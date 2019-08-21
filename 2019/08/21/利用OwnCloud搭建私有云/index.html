@@ -86,14 +86,14 @@
 <meta property="og:site_name" content="白桦林的个人网站">
 <meta property="og:description" content="1、添加 EPEL &amp;amp; WEBTATIC 软件源切换为root用户进行操作 123yum -y install epel-release rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpmyum -y update  2、Installing Apache12yum install httpdsystemctl">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/2019/08/21/利用OwnCloud搭建私有云/1.jpg">
-<meta property="og:image" content="http://yoursite.com/images/php.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20190308121319734.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poaXhpbl9jbg==,size_16,color_FFFFFF,t_70">
-<meta property="og:updated_time" content="2019-08-21T13:04:04.677Z">
+<meta property="og:image" content="https://pic.superbed.cn/item/5d5d495a451253d17803e5fd.jpg">
+<meta property="og:image" content="https://pic.superbed.cn/item/5d5d4961451253d17803e677.png">
+<meta property="og:image" content="https://pic.superbed.cn/item/5d5d4a53451253d17803efce.png">
+<meta property="og:updated_time" content="2019-08-21T13:43:21.527Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="利用OwnCloud搭建私有云">
 <meta name="twitter:description" content="1、添加 EPEL &amp;amp; WEBTATIC 软件源切换为root用户进行操作 123yum -y install epel-release rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpmyum -y update  2、Installing Apache12yum install httpdsystemctl">
-<meta name="twitter:image" content="http://yoursite.com/2019/08/21/利用OwnCloud搭建私有云/1.jpg">
+<meta name="twitter:image" content="https://pic.superbed.cn/item/5d5d495a451253d17803e5fd.jpg">
 
 
 
@@ -339,7 +339,7 @@
 <h1 id="2、Installing-Apache"><a href="#2、Installing-Apache" class="headerlink" title="2、Installing Apache"></a>2、Installing Apache</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yum install httpd</span><br><span class="line">systemctl start httpd</span><br></pre></td></tr></table></figure>
 
 <p>访问<a href="http://your_ip，测试apache是否配置成功。" target="_blank" rel="noopener">http://your_ip，测试apache是否配置成功。</a></p>
-<p><img src="1.jpg" alt="111"></p>
+<p><img src="https://pic.superbed.cn/item/5d5d495a451253d17803e5fd.jpg" alt="Apache配置成功测试"></p>
 <h1 id="3、Installing-MariaDB"><a href="#3、Installing-MariaDB" class="headerlink" title="3、Installing MariaDB"></a>3、Installing MariaDB</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">yum install mariadb-server mariadb</span><br><span class="line">systemctl start mariadb</span><br><span class="line">mysql_secure_installation</span><br><span class="line">systemctl restart mariadb</span><br></pre></td></tr></table></figure>
 
 <h1 id="4、Installing-PHP-amp-amp-软件包"><a href="#4、Installing-PHP-amp-amp-软件包" class="headerlink" title="4、Installing PHP &amp;&amp; 软件包"></a>4、Installing PHP &amp;&amp; 软件包</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum -y install nginx mariadb-server redis lbzip2 php72w php72w-common php72w-fpm php72w-gd php72w-mysql php72w-mbstring php72w-intl php72w-pecl-imagick php72w-xml php72w-pecl-redis samba-client</span><br></pre></td></tr></table></figure>
@@ -349,7 +349,7 @@
 <p>加入以下内容：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line"></span><br><span class="line">phpinfo();</span><br><span class="line"></span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
 
-<p>Restart apache server &amp; then open web-browser. Now enter the following url：<br><a href="http://your_ip/test.php" target="_blank" rel="noopener">http://your_ip/test.php</a><br><img src="/images/php.png" alt="PHP安装测试"></p>
+<p>Restart apache server &amp; then open web-browser. Now enter the following url：<br><a href="http://your_ip/test.php" target="_blank" rel="noopener">http://your_ip/test.php</a><br><img src="https://pic.superbed.cn/item/5d5d4961451253d17803e677.png" alt="PHP安装测试"></p>
 <h1 id="5、安装owncloud"><a href="#5、安装owncloud" class="headerlink" title="5、安装owncloud"></a>5、安装owncloud</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">wget https://download.owncloud.org/community/owncloud-10.0.10.tar.bz2</span><br><span class="line">tar -xvf owncloud-10.0.4.tar.bz2</span><br><span class="line">mv owncloud/* /var/www/html</span><br><span class="line">sudo vim /etc/httpd/conf/httpd.conf</span><br></pre></td></tr></table></figure>
 
 <p>更改下面的选项：<br>AllowOverride All（4处）<br>保存该文件，并修改 OwnCloud 文件夹的文件权限：</p>
@@ -364,7 +364,7 @@
 <p>需要输入之前设置的密码</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">MariaDB [(none)] &gt; create database owncloud;</span><br><span class="line">MariaDB [(none)] &gt; GRANT ALL ON owncloud.* TO ocuser@localhost IDENTIFIED BY &apos;owncloud&apos;;</span><br><span class="line">MariaDB [(none)] &gt; flush privileges;</span><br><span class="line">MariaDB [(none)] &gt; exit</span><br></pre></td></tr></table></figure>
 
-<p>服务器配置部分完成后，现在我们可以在网页浏览器上访问 OwnCloud。打开浏览器，输入您的服务器 IP 地址:<br><img src="https://img-blog.csdnimg.cn/20190308121319734.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poaXhpbl9jbg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>OK！</p>
+<p>服务器配置部分完成后，现在我们可以在网页浏览器上访问 OwnCloud。打开浏览器，输入您的服务器 IP 地址:<br><img src="https://pic.superbed.cn/item/5d5d4a53451253d17803efce.png" alt="OwnCloud配置成功测试"><br>OK！</p>
 
       
     </div>
