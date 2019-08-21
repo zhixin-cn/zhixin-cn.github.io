@@ -79,13 +79,21 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="白桦林的个人网站">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="1、添加 EPEL &amp;amp; WEBTATIC 软件源切换为root用户进行操作 123yum -y install epel-release rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpmyum -y update  2、Installing Apache12yum install httpdsystemctl">
+<meta property="og:type" content="article">
+<meta property="og:title" content="利用OwnCloud搭建私有云">
+<meta property="og:url" content="http://yoursite.com/2019/08/21/利用OwnCloud搭建私有云/index.html">
 <meta property="og:site_name" content="白桦林的个人网站">
+<meta property="og:description" content="1、添加 EPEL &amp;amp; WEBTATIC 软件源切换为root用户进行操作 123yum -y install epel-release rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpmyum -y update  2、Installing Apache12yum install httpdsystemctl">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/2019/08/21/利用OwnCloud搭建私有云/1.jpg">
+<meta property="og:image" content="http://yoursite.com/images/php.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20190308121319734.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poaXhpbl9jbg==,size_16,color_FFFFFF,t_70">
+<meta property="og:updated_time" content="2019-08-21T12:35:15.848Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="白桦林的个人网站">
+<meta name="twitter:title" content="利用OwnCloud搭建私有云">
+<meta name="twitter:description" content="1、添加 EPEL &amp;amp; WEBTATIC 软件源切换为root用户进行操作 123yum -y install epel-release rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpmyum -y update  2、Installing Apache12yum install httpdsystemctl">
+<meta name="twitter:image" content="http://yoursite.com/2019/08/21/利用OwnCloud搭建私有云/1.jpg">
 
 
 
@@ -115,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2019/08/21/利用OwnCloud搭建私有云/">
 
 
 
 
 
-  <title>白桦林的个人网站</title>
+  <title>利用OwnCloud搭建私有云 | 白桦林的个人网站</title>
   
 
 
@@ -140,8 +148,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -244,9 +251,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -276,9 +283,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/08/21/利用OwnCloud搭建私有云/" itemprop="url">利用OwnCloud搭建私有云</a></h1>
+          <h1 class="post-title" itemprop="name headline">利用OwnCloud搭建私有云</h1>
         
 
         <div class="post-meta">
@@ -328,9 +333,7 @@
       
 
       
-        
-          
-            <h1 id="1、添加-EPEL-amp-WEBTATIC-软件源"><a href="#1、添加-EPEL-amp-WEBTATIC-软件源" class="headerlink" title="1、添加 EPEL &amp; WEBTATIC 软件源"></a>1、添加 EPEL &amp; WEBTATIC 软件源</h1><p><font color="red">切换为root用户进行操作</font></p>
+        <h1 id="1、添加-EPEL-amp-WEBTATIC-软件源"><a href="#1、添加-EPEL-amp-WEBTATIC-软件源" class="headerlink" title="1、添加 EPEL &amp; WEBTATIC 软件源"></a>1、添加 EPEL &amp; WEBTATIC 软件源</h1><p><font color="red">切换为root用户进行操作</font></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">yum -y install epel-release </span><br><span class="line">rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm</span><br><span class="line">yum -y update</span><br></pre></td></tr></table></figure>
 
 <h1 id="2、Installing-Apache"><a href="#2、Installing-Apache" class="headerlink" title="2、Installing Apache"></a>2、Installing Apache</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yum install httpd</span><br><span class="line">systemctl start httpd</span><br></pre></td></tr></table></figure>
@@ -363,8 +366,6 @@
 
 <p>服务器配置部分完成后，现在我们可以在网页浏览器上访问 OwnCloud。打开浏览器，输入您的服务器 IP 地址:<br><img src="https://img-blog.csdnimg.cn/20190308121319734.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poaXhpbl9jbg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>OK！</p>
 
-          
-        
       
     </div>
     
@@ -381,12 +382,12 @@
       
 
       
+      
+      
 
       
 
       
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -396,10 +397,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -407,6 +409,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -427,8 +433,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -486,6 +501,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1、添加-EPEL-amp-WEBTATIC-软件源"><span class="nav-number">1.</span> <span class="nav-text">1、添加 EPEL &amp; WEBTATIC 软件源</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2、Installing-Apache"><span class="nav-number">2.</span> <span class="nav-text">2、Installing Apache</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3、Installing-MariaDB"><span class="nav-number">3.</span> <span class="nav-text">3、Installing MariaDB</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4、Installing-PHP-amp-amp-软件包"><span class="nav-number">4.</span> <span class="nav-text">4、Installing PHP &amp;&amp; 软件包</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5、安装owncloud"><span class="nav-number">5.</span> <span class="nav-text">5、安装owncloud</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -620,6 +651,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
